@@ -2,12 +2,11 @@
 Given a screenshot of official stats, shows your individual performance and ranks you among the peers
 
 
-## How to try out Stats Checker
+## How to try out Statistics Checker
 
-If you just want to get up-and-running with the project, open the code in google Colab [by clicking on this link](https://colab.research.google.com/github/faizankshaikh/AmongUs_StatsChecker/blob/main/GetYourStats.ipynb), run all the cells in sequential order to host the web service, and use the weblink created at the end of the notebook. 
+If you just want to get up-and-running with the project, open the code in google Colab [by clicking on this link](https://colab.research.google.com/github/faizankshaikh/AmongUs_StatsChecker/blob/main/GetYourStats.ipynb), run all the cells in sequential order to host the web service, and use the weblink created at the end of the notebook. You can use the web service as shown in the video below
 
-
-You can use the web service as shown in the video below
+![Demo](demo.gif)
 
 On the other hand, if you are technically savvy, you can change the code and try to print/plot more detailed stats using the pandas dataframe "df"
 
