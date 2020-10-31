@@ -104,9 +104,6 @@ glob2==0.7
 google==2.0.3
 google-api-core==1.16.0
 google-api-python-client==1.7.12
-google-auth==1.17.2
-google-auth-httplib2==0.0.4
-google-auth-oauthlib==0.4.1
 google-cloud-bigquery==1.21.0
 google-cloud-bigquery-storage==1.1.0
 google-cloud-core==1.0.3
@@ -131,7 +128,7 @@ holidays==0.10.3
 holoviews==1.13.4
 html5lib==1.0.1
 httpimport==0.5.18
-httplib2==0.17.4
+httplib2>=0.18.0
 httplib2shim==0.0.3
 humanize==0.5.1
 hyperopt==0.1.2
