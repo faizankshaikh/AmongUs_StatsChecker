@@ -7,7 +7,7 @@ Pillow>=7.1.0
 pyngrok==5.0.0
 scipy==1.4.1
 streamlit==0.70.0
-torch==1.6.0+cu101
+torch==1.6.0
 torchsummary==1.5.1
 torchtext==0.3.1
-torchvision==0.7.0+cu101
+torchvision==0.7.0
