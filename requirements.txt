@@ -2,6 +2,6 @@ numpy==1.18.5
 scipy==1.4.1
 easyocr==1.1.10
 matplotlib==3.2.2
-opencv_python=headless==4.1.2.30
+opencv_python-headless==4.1.2.30
 streamlit==0.70.0
 pandas==1.1.3
