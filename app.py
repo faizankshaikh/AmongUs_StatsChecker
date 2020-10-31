@@ -13,6 +13,9 @@ from typing import Union
 from io import BytesIO, StringIO
 from scipy.stats import norm, percentileofscore
 
+if not os.path.exists('processed_images'):
+    os.makedirs('processed_images')
+
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
 FILE_TYPES = ["png", "jpeg", "jpg"]
