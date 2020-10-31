@@ -22,7 +22,7 @@ FILE_TYPES = ["png", "jpeg", "jpg"]
 reader = easyocr.Reader(["en"])
 PAGE_CONFIG = {"page_title": "StColab.io", "layout": "centered"}
 st.set_page_config(**PAGE_CONFIG)
-DATA_DIR = "/content/AmongUs_StatsChecker"
+DATA_DIR = "AmongUs_StatsChecker"
 
 
 class FileType(Enum):
