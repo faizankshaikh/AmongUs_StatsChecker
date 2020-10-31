@@ -99,7 +99,7 @@ def get_reply(user_name, img_path):
 
     assert len(stats) == 19
     stats = stats + list(np.zeros(6, dtype="int"))
-    df = pd.read_csv(os.path.join(DATA_DIR, "info.csv"))
+    df = pd.read_csv("https://raw.githubusercontent.com/faizankshaikh/AmongUs_StatsChecker/main/info.csv")
     df = df.append(pd.Series(stats, df.columns), ignore_index=True)
 
     df["Tasks Completion Rate"] = df["All Tasks Completed"] * 100 / df["Games Started"]
