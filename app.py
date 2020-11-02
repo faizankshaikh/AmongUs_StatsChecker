@@ -6,9 +6,7 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 
-
 from glob import glob
-from enum import Enum
 from typing import Union
 from io import BytesIO, StringIO
 from scipy.stats import norm, percentileofscore
@@ -18,20 +16,16 @@ if not os.path.exists('processed_images'):
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
-FILE_TYPES = ["png", "jpeg", "jpg"]
+FILE_TYPES = ["png", "jpg", "jpeg"]
 reader = easyocr.Reader(["en"])
 PAGE_CONFIG = {"page_title": "StColab.io", "layout": "centered"}
 st.set_page_config(**PAGE_CONFIG)
-DATA_DIR = "amongus_statschecker/AmongUs_StatsChecker"
+DATA_DIR = "."
 
 
-class FileType(Enum):
-    IMAGE = "Image"
-
-
-def get_file_type(file: Union[BytesIO, StringIO]) -> FileType:
+def get_file_type(file: Union[BytesIO, StringIO]) -> str:
     if isinstance(file, BytesIO):
-        return FileType.IMAGE
+        return "Image"
 
 
 def get_segment_crop(img, tol=0, mask=None):
@@ -184,7 +178,7 @@ def main():
             show_file.info("Please upload a file of type: " + ", ".join(FILE_TYPES))
             return
 
-        file_type = get_file_type(file)
+        assert "Image" == get_file_type(file)
 
         img_path = user_name + ".jpeg"
 
