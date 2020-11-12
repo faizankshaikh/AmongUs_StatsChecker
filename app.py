@@ -70,7 +70,7 @@ def preprocess_image(user_name, img_path):
     result = result[:-30, int(0.666 * result.shape[1]) :]
 
     # cv2_imshow(result)
-    cv2.imwrite("processed_images/" + user_name + ".jpeg", result)
+    cv2.imwrite("processed_images/temp.jpeg", result)
 
 
 def get_reply(user_name, img_path):
@@ -78,7 +78,7 @@ def get_reply(user_name, img_path):
     preprocess_image(user_name, img_path)
 
     result = reader.readtext(
-        "processed_images/" + user_name + ".jpeg",
+        "processed_images/temp.jpeg",
         decoder="greedy",
         detail=0,
         text_threshold=0.6,
@@ -180,7 +180,7 @@ def main():
 
         assert "Image" == get_file_type(file)
 
-        img_path = user_name + ".jpeg"
+        img_path = "temp_raw.jpeg"
 
         f = open(img_path, "wb")
         f.write(file.getvalue())
