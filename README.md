@@ -28,3 +28,11 @@ If you want to collaborate on the project, you can help make the image parsing a
 Please refer CONTRIBUTING.md
 
 Along with this, if you have any general suggestions / feedback, you can create a github issue or contact me directly on faizankshaikh at gmail.
+
+## Acknowledgement
+
+This project is built on the shoulders of awesome tools (and their dependencies ofcourse)
+
+* [Streamlit](https://github.com/streamlit/streamlit)
+* [EasyOCR](https://github.com/JaidedAI/EasyOCR)
+* [Pandas](https://github.com/pandas-dev/pandas)
